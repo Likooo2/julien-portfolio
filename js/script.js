@@ -1,3 +1,24 @@
+// ============ MESSAGE D'ACCUEIL (visiteurs venus du QR code) ============
+const qrGreeting = document.getElementById('qr-greeting');
+const qrGreetingClose = document.getElementById('qr-greeting-close');
+
+if (qrGreeting) {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('via') === 'qr') {
+    qrGreeting.hidden = false;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => qrGreeting.classList.add('is-visible'));
+    });
+  }
+}
+
+if (qrGreetingClose) {
+  qrGreetingClose.addEventListener('click', () => {
+    qrGreeting.classList.remove('is-visible');
+    setTimeout(() => { qrGreeting.hidden = true; }, 400);
+  });
+}
+
 // ============ MENU MOBILE ============
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');
