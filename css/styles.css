@@ -281,41 +281,59 @@ strong { color: var(--ink); font-weight: 600; }
   padding: var(--space-6) 0 var(--space-5);
 }
 
-.qr-greeting {
+/* ============ ÉCRAN D'INTRO ============ */
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: var(--bg);
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: var(--accent-tint);
-  border: 1px solid var(--rule);
-  color: var(--accent);
-  font-size: 0.88rem;
-  padding: 12px 16px;
-  margin: 0 0 var(--space-4);
-  max-width: 640px;
-  opacity: 0;
-  transform: translateY(-6px);
-  transition: opacity 500ms ease, transform 500ms ease;
+  justify-content: center;
+  padding: var(--space-3);
+  opacity: 1;
+  transition: opacity 700ms ease;
 }
-.qr-greeting.is-visible {
+.intro-overlay.is-hiding {
+  opacity: 0;
+  pointer-events: none;
+}
+.intro-overlay.is-done {
+  display: none;
+}
+
+.intro-text {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: var(--ink);
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+.intro-overlay.is-visible .intro-text {
   opacity: 1;
   transform: translateY(0);
 }
-.qr-greeting .mono { color: var(--accent); flex-shrink: 0; }
-.qr-greeting-close {
-  margin-left: auto;
-  background: none;
-  border: none;
-  color: var(--accent);
-  font-size: 1.1rem;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0 2px;
-  flex-shrink: 0;
-}
-.qr-greeting-close:hover { color: var(--ink); }
 
-@media (max-width: 620px) {
-  .qr-greeting { font-size: 0.82rem; padding: 10px 14px; }
+.intro-text-soft {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.55em;
+  color: var(--ink-soft);
+  margin-top: 10px;
+}
+
+body.intro-active {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-overlay { display: none; }
 }
 
 .hero-grid {

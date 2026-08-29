@@ -1,22 +1,32 @@
-// ============ MESSAGE D'ACCUEIL (visiteurs venus du QR code) ============
-const qrGreeting = document.getElementById('qr-greeting');
-const qrGreetingClose = document.getElementById('qr-greeting-close');
+// ============ ÉCRAN D'INTRO ============
+const introOverlay = document.getElementById('intro-overlay');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-if (qrGreeting) {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get('via') === 'qr') {
-    qrGreeting.hidden = false;
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => qrGreeting.classList.add('is-visible'));
-    });
-  }
-}
+if (introOverlay && !prefersReducedMotion) {
+  document.body.classList.add('intro-active');
 
-if (qrGreetingClose) {
-  qrGreetingClose.addEventListener('click', () => {
-    qrGreeting.classList.remove('is-visible');
-    setTimeout(() => { qrGreeting.hidden = true; }, 400);
+  const hideIntro = () => {
+    if (introOverlay.classList.contains('is-hiding')) return;
+    introOverlay.classList.add('is-hiding');
+    document.body.classList.remove('intro-active');
+    setTimeout(() => introOverlay.classList.add('is-done'), 700);
+  };
+
+  // Apparition de la phrase
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => introOverlay.classList.add('is-visible'));
   });
+
+  // Disparition automatique après un court instant
+  const autoHideTimer = setTimeout(hideIntro, 2200);
+
+  // Possibilité de passer directement (clic, touche, scroll)
+  introOverlay.addEventListener('click', () => { clearTimeout(autoHideTimer); hideIntro(); });
+  window.addEventListener('keydown', () => { clearTimeout(autoHideTimer); hideIntro(); }, { once: true });
+  window.addEventListener('wheel', () => { clearTimeout(autoHideTimer); hideIntro(); }, { once: true, passive: true });
+  window.addEventListener('touchstart', () => { clearTimeout(autoHideTimer); hideIntro(); }, { once: true, passive: true });
+} else if (introOverlay) {
+  introOverlay.classList.add('is-done');
 }
 
 // ============ MENU MOBILE ============
