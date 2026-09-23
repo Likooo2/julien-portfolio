@@ -2,87 +2,98 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Julien Pires, étudiant BUT GEA, Gestion Comptable, Fiscale et Financière</title>
-<meta name="description" content="Julien Pires, étudiant en BUT GEA (GC2F) à l'IUT d'Amiens, à la recherche d'un stage (janvier–février 2027) et d'une alternance (dès septembre 2027) en comptabilité, finance ou gestion.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julien Pires, étudiant en BUT GEA, Gestion comptable, fiscale et financière</title>
+<meta name="description" content="Julien Pires, étudiant en 2e année de BUT GEA (parcours GC2F) à l'IUT d'Amiens, recherche un stage du 4 janvier au 27 février 2027 et une alternance d'un an à partir de septembre 2027 en comptabilité, finance ou gestion.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://likooo2.github.io/julien-portfolio/">
 
-<!-- Open Graph -->
+<!-- Aperçu lors d'un partage (LinkedIn, messageries) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Julien Pires, BUT GEA, Gestion Comptable, Fiscale et Financière">
-<meta property="og:description" content="Étudiant à l'IUT d'Amiens, à la recherche d'un stage et d'une alternance en comptabilité, finance ou gestion.">
-<meta property="og:image" content="images/julien.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://likooo2.github.io/julien-portfolio/">
+<meta property="og:title" content="Julien Pires, BUT GEA, Gestion comptable, fiscale et financière">
+<meta property="og:description" content="Étudiant à l'IUT d'Amiens, à la recherche d'un stage (janvier et février 2027) et d'une alternance (dès septembre 2027) en comptabilité, finance ou gestion.">
+<meta property="og:image" content="https://likooo2.github.io/julien-portfolio/images/julien.png">
+<meta property="og:image:alt" content="Portrait de Julien Pires">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..600;1,9..144,400..500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Public+Sans:wght@400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+
+<script>
+  document.documentElement.classList.add('js');
+  try { if (sessionStorage.getItem('jp-intro-vue')) document.documentElement.classList.add('intro-seen'); } catch (e) {}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Julien Pires",
+  "url": "https://likooo2.github.io/julien-portfolio/",
+  "image": "https://likooo2.github.io/julien-portfolio/images/julien.png",
+  "jobTitle": "Étudiant en BUT GEA, parcours Gestion comptable, fiscale et financière",
+  "address": { "@type": "PostalAddress", "addressLocality": "Amiens", "addressCountry": "FR" },
+  "sameAs": ["https://www.linkedin.com/in/julien-pires-460977383"]
+}
+</script>
 </head>
+
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<a class="skip-link" href="#accueil-contenu">Aller au contenu</a>
-
+<!-- Écran d'accueil (affiché une fois par visite) -->
 <div class="intro-overlay" id="intro-overlay" aria-hidden="true">
-  <p class="intro-text">
-    Bienvenue.
-    <span class="intro-text-soft">Content que vous soyez là.</span>
-  </p>
+  <p class="intro-text">Bienvenue.<span class="intro-soft">Content que vous soyez là.</span></p>
 </div>
-
 
 <header class="site-header" id="header">
   <div class="container header-inner">
-    <a href="#accueil" class="logo" aria-label="Retour à l'accueil">
-      <span class="logo-mark">JP</span>
-      <span class="logo-name">Julien&nbsp;Pires</span>
+    <a href="#accueil" class="logo" aria-label="Julien Pires, retour en haut de la page">
+      <span class="logo-mark" aria-hidden="true">JP</span>
+      <span class="logo-name">Julien Pires</span>
     </a>
-
-    <nav class="main-nav" id="main-nav">
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
       <a href="#a-propos">À propos</a>
       <a href="#formation">Formation</a>
       <a href="#experiences">Expériences</a>
       <a href="#competences">Compétences</a>
+      <a href="#realisations">Réalisations</a>
       <a href="#projet">Projet</a>
       <a href="#interets">Intérêts</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <div class="header-actions">
-      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
   </div>
 </header>
 
-<main id="accueil-contenu">
+<main id="contenu">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="accueil">
+  <!-- ===================== ACCUEIL ===================== -->
+  <section class="hero" id="accueil" aria-labelledby="hero-titre">
     <div class="container hero-grid">
-      <div class="hero-text reveal">
-        <p class="eyebrow">Amiens · BUT GEA, Gestion Comptable, Fiscale et Financière</p>
-        <h1>Julien Pires</h1>
-        <p class="hero-lede">
-          Étudiant en 2ᵉ année de BUT GEA à l'IUT d'Amiens. Je m'intéresse au chiffre juste,
-          à la rigueur qu'il impose et à ce qu'il permet de comprendre d'une entreprise,
-          et je cherche aujourd'hui un terrain pour transformer ça en compétences réelles.
-        </p>
+      <div class="hero-text">
+        <h1 id="hero-titre">Julien Pires</h1>
+        <p class="hero-role">Étudiant en 2<sup>e</sup>&nbsp;année de BUT GEA, parcours Gestion comptable, fiscale et financière, à&nbsp;l'IUT d'Amiens.</p>
+        <p class="hero-lede">Je m'intéresse au chiffre juste, à la rigueur qu'il impose et à ce qu'il permet de comprendre d'une entreprise. Je cherche aujourd'hui un terrain pour transformer ça en compétences réelles.</p>
 
-        <dl class="ledger">
-          <div class="ledger-row">
-            <dt>Stage</dt>
-            <dd><span class="mono">04.01.2027 → 27.02.2027</span></dd>
-          </div>
-          <div class="ledger-row">
-            <dt>Alternance</dt>
-            <dd><span class="mono">Dès 09.2027, 1 an, cadre du master</span></dd>
-          </div>
-          <div class="ledger-row">
-            <dt>Domaines</dt>
-            <dd>Comptabilité · Finance · Gestion · Contrôle de gestion</dd>
-          </div>
-        </dl>
+        <!-- Relevé : filet simple en tête, double filet de total en pied -->
+        <div class="statement">
+          <p class="statement-title" id="recherche-titre">Ce que je recherche</p>
+          <dl class="statement-rows" aria-labelledby="recherche-titre">
+            <div><dt>Stage</dt><dd>du 4&nbsp;janvier au 27&nbsp;février&nbsp;2027</dd></div>
+            <div><dt>Alternance</dt><dd>d'un an, à partir de septembre&nbsp;2027</dd></div>
+            <div><dt>Domaines</dt><dd>comptabilité, finance, gestion, contrôle de gestion</dd></div>
+          </dl>
+        </div>
 
         <div class="hero-actions">
           <a href="#a-propos" class="btn btn-primary">Découvrir mon profil</a>
@@ -90,278 +101,282 @@
         </div>
       </div>
 
-      <div class="hero-photo reveal" style="--delay:120ms">
-        <figure>
-          <img src="images/julien.png" alt="Portrait de Julien Pires" width="900" height="1198">
-          <figcaption><span class="mono">Voilà, tel que je suis</span></figcaption>
-        </figure>
-      </div>
+      <figure class="hero-photo">
+        <figcaption>Voilà, tel que je suis</figcaption>
+        <img src="images/julien.png" width="900" height="1198" alt="Julien Pires en chemise blanche, souriant, les mains jointes devant lui" fetchpriority="high">
+      </figure>
     </div>
   </section>
 
-  <!-- ============ À PROPOS ============ -->
-  <section class="section" id="a-propos">
-    <div class="container">
-      <p class="section-eyebrow reveal">01 · À propos</p>
-      <h2 class="section-title reveal">Construire méthodiquement, avancer par curiosité.</h2>
-
+  <!-- ===================== 01 À PROPOS ===================== -->
+  <section class="section" id="a-propos" aria-labelledby="a-propos-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="a-propos-titre"><span class="section-num" aria-hidden="true">01</span>À propos</h2>
+      <p class="chapeau">Construire méthodiquement, avancer par curiosité.</p>
       <div class="text-columns">
-        <div class="reveal">
-          <p>
-            J'ai 19 ans et j'aime les situations où un problème peut se décomposer,
-            se vérifier et se résoudre proprement, ce qui explique en grande partie ce qui m'a
-            amené vers la gestion, la comptabilité et l'analyse financière. Quand un
-            objectif m'intéresse vraiment, j'ai tendance à chercher activement les
-            moyens de l'atteindre plutôt que d'attendre que les choses se présentent :
-            c'est ce qui m'a poussé, par exemple, à multiplier les expériences depuis
-            le lycée plutôt que d'attendre la fin de mes études pour découvrir le monde
-            professionnel.
-          </p>
-        </div>
-        <div class="reveal" style="--delay:80ms">
-          <p>
-            Je n'ai pas la prétention de tout savoir : je suis au tout début de mon
-            parcours, et je le sais. En revanche, j'apprends vite, je suis autonome
-            dans ce que j'entreprends, et je préfère largement comprendre correctement
-            une notion que la survoler. C'est cette base que je cherche aujourd'hui à
-            confronter à la réalité d'une entreprise, à travers un stage puis une
-            alternance.
-          </p>
-        </div>
+        <p>J'ai 19&nbsp;ans et j'aime les situations où un problème peut se décomposer, se vérifier et se résoudre proprement. C'est en grande partie ce qui m'a amené vers la gestion, la comptabilité et l'analyse financière. Quand un objectif m'intéresse vraiment, j'ai tendance à chercher activement les moyens de l'atteindre plutôt que d'attendre que les choses se présentent&nbsp;: c'est ce qui m'a poussé, par exemple, à multiplier les expériences depuis le lycée plutôt que d'attendre la fin de mes études pour découvrir le monde professionnel.</p>
+        <p>Je n'ai pas la prétention de tout savoir&nbsp;: je suis au tout début de mon parcours, et je le sais. En revanche, j'apprends vite, je suis autonome dans ce que j'entreprends, et je préfère largement comprendre correctement une notion que la survoler. C'est cette base que je cherche aujourd'hui à confronter à la réalité d'une entreprise, à travers un stage puis une alternance.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ FORMATION ============ -->
-  <section class="section section-alt" id="formation">
-    <div class="container">
-      <p class="section-eyebrow reveal">02 · Formation</p>
-      <h2 class="section-title reveal">Parcours académique</h2>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-date mono">Depuis 09.2025</div>
-          <div class="timeline-body">
-            <h3>BUT Gestion des Entreprises et des Administrations</h3>
-            <p class="timeline-org">Parcours Gestion Comptable, Fiscale et Financière (GC2F), IUT d'Amiens</p>
-            <ul>
+  <!-- ===================== 02 FORMATION ===================== -->
+  <section class="section section-alt" id="formation" aria-labelledby="formation-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="formation-titre"><span class="section-num" aria-hidden="true">02</span>Formation</h2>
+      <ol class="entries">
+        <li class="entry">
+          <div class="entry-when">
+            <p class="entry-date">Depuis septembre&nbsp;2025</p>
+            <p class="entry-kind">En cours</p>
+          </div>
+          <div class="entry-body">
+            <h3>BUT Gestion des entreprises et des administrations</h3>
+            <p class="entry-place">Parcours Gestion comptable, fiscale et financière (GC2F), IUT d'Amiens</p>
+            <ul class="entry-points">
               <li>Production et contrôle de l'information comptable, fiscale et sociale</li>
               <li>Analyse de l'activité et outils de prévision</li>
               <li>Comptabilité, fiscalité et gestion financière</li>
             </ul>
           </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:80ms">
-          <div class="timeline-date mono">2022 → 2025</div>
-          <div class="timeline-body">
+        </li>
+        <li class="entry">
+          <div class="entry-when">
+            <p class="entry-date">2022 à 2025</p>
+            <p class="entry-kind">Diplôme obtenu</p>
+          </div>
+          <div class="entry-body">
             <h3>Baccalauréat général, mention assez bien</h3>
-            <p class="timeline-org">Lycée Félix Faure, Beauvais</p>
-            <ul>
-              <li>Spécialités Mathématiques, SES, NSI</li>
+            <p class="entry-place">Lycée Félix Faure, Beauvais</p>
+            <ul class="entry-points">
+              <li>Spécialités mathématiques, SES et NSI</li>
             </ul>
           </div>
-        </article>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ============ EXPÉRIENCES ============ -->
-  <section class="section" id="experiences">
-    <div class="container">
-      <p class="section-eyebrow reveal">03 · Expériences</p>
-      <h2 class="section-title reveal">Expériences professionnelles</h2>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-date mono">06 → 07.2026</div>
-          <div class="timeline-body">
+  <!-- ===================== 03 EXPÉRIENCES ===================== -->
+  <section class="section" id="experiences" aria-labelledby="experiences-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="experiences-titre"><span class="section-num" aria-hidden="true">03</span>Expériences</h2>
+      <ol class="entries">
+        <li class="entry">
+          <div class="entry-when">
+            <p class="entry-date">Juin et juillet&nbsp;2026</p>
+            <p class="entry-kind">Emploi</p>
+          </div>
+          <div class="entry-body">
             <h3>Employé polyvalent</h3>
-            <p class="timeline-org">Lidl, Beauvais</p>
-            <ul>
+            <p class="entry-place">Lidl, Beauvais</p>
+            <ul class="entry-points">
               <li>Gestion quotidienne des encaissements en espèces et par carte</li>
               <li>Contrôle rigoureux des flux et respect des procédures internes</li>
               <li>Travail dans un environnement soutenu, exigeant rapidité et fiabilité</li>
             </ul>
           </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:80ms">
-          <div class="timeline-date mono">02 → 03.2026</div>
-          <div class="timeline-body">
+        </li>
+        <li class="entry">
+          <div class="entry-when">
+            <p class="entry-date">Février et mars&nbsp;2026</p>
+            <p class="entry-kind">Stage</p>
+          </div>
+          <div class="entry-body">
             <h3>Stagiaire, accompagnement de jeunes entreprises</h3>
-            <p class="timeline-org">Initiative Oise Ouest</p>
-            <ul>
+            <p class="entry-place">Initiative Oise Ouest</p>
+            <ul class="entry-points">
               <li>Accompagnement de jeunes entrepreneurs dans le suivi de leur comptabilité et de leur activité</li>
               <li>Utilisation d'Excel pour organiser, suivre et mettre en forme des données financières</li>
               <li>Analyse d'informations financières et participation au suivi administratif des dossiers</li>
             </ul>
           </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:160ms">
-          <div class="timeline-date mono">07 → 08.2025</div>
-          <div class="timeline-body">
-            <h3>Animateur <span class="badge">BAFA</span></h3>
-            <p class="timeline-org">Centre de loisirs La Ribambelle, Beauvais</p>
-            <ul>
-              <li>Encadrement d'un groupe d'enfants de 8 ans, organisation d'activités</li>
+        </li>
+        <li class="entry">
+          <div class="entry-when">
+            <p class="entry-date">Juillet et août&nbsp;2025</p>
+            <p class="entry-kind">Emploi</p>
+          </div>
+          <div class="entry-body">
+            <h3>Animateur <span class="tag-bafa">BAFA</span></h3>
+            <p class="entry-place">Centre de loisirs La Ribambelle, Beauvais</p>
+            <ul class="entry-points">
+              <li>Encadrement d'un groupe d'enfants de 8&nbsp;ans, organisation d'activités</li>
               <li>Gestion du planning et adaptation aux imprévus</li>
               <li>Travail en équipe et prise de responsabilités</li>
             </ul>
           </div>
+        </li>
+      </ol>
+      <p class="note"><strong>BAFA</strong>, obtenu auprès de la Ligue de l'enseignement à Beauvais (2024-2025). Au-delà de l'encadrement, cette expérience m'a surtout appris à assumer une responsabilité concrète sur le terrain&nbsp;: décider vite, m'adapter, et rendre des comptes sur ce qui a été fait.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 04 COMPÉTENCES ===================== -->
+  <section class="section section-alt" id="competences" aria-labelledby="competences-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="competences-titre"><span class="section-num" aria-hidden="true">04</span>Compétences</h2>
+      <dl class="skills">
+        <div class="skill">
+          <dt>Gestion et finance</dt>
+          <dd><p>Les bases de la comptabilité générale sont acquises, et j'ai déjà dépassé ce socle grâce à ma formation en GC2F&nbsp;: écritures comptables, TVA, bilan et compte de résultat n'ont plus de secret pour moi. À cela s'ajoutent le suivi et l'analyse de données financières, ainsi que la participation au suivi administratif de dossiers réels lors de mon stage chez Initiative Oise Ouest.</p></dd>
+        </div>
+        <div class="skill">
+          <dt>Excel</dt>
+          <dd><p>Utilisé en conditions réelles pour organiser et mettre en forme des données financières d'entreprises accompagnées&nbsp;: <span class="formula">RECHERCHEX</span>, tableaux croisés dynamiques et <span class="formula">SOMME.SI.ENS</span> pour croiser et vérifier des données chiffrées.</p></dd>
+        </div>
+        <div class="skill">
+          <dt>Langues</dt>
+          <dd>
+            <ul class="plain">
+              <li><strong>Français</strong>, langue maternelle</li>
+              <li><strong>Anglais</strong>, niveau B2, TOEIC visé en 2027</li>
+              <li><strong>Espagnol</strong>, niveau B1</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill">
+          <dt>Méthode de travail</dt>
+          <dd><p>Rigueur et organisation dans le traitement de l'information, esprit d'analyse, autonomie sur les missions qui me sont confiées.</p></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== 05 RÉALISATIONS =====================
+       Pour remplacer un exemple par un vrai projet :
+       1. retirer la classe "is-placeholder" de l'article et la ligne "Exemple à remplacer" ;
+       2. changer le titre, le contexte et les compétences ;
+       3. image : remplacer "Image à ajouter" par <img src="images/mon-projet.png" alt="Description">
+       4. lien : remplacer le <span class="project-link is-disabled"> par
+          <a class="project-link" href="docs/mon-fichier.pdf" download>Télécharger le document</a>
+  -->
+  <section class="section" id="realisations" aria-labelledby="realisations-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="realisations-titre"><span class="section-num" aria-hidden="true">05</span>Réalisations</h2>
+      <p class="section-intro">Des travaux concrets, menés en cours ou en stage, qui montrent comment j'applique ce que j'apprends.</p>
+      <div class="projects">
+        <article class="project is-placeholder">
+          <div class="project-media">Image à ajouter</div>
+          <div class="project-body">
+            <p class="placeholder-flag">Exemple à remplacer</p>
+            <h3>Tableau de bord Excel</h3>
+            <p>Contexte en une ligne&nbsp;: dans quel cadre ce projet a été réalisé.</p>
+            <p class="project-skills">Compétences&nbsp;: Excel, tableaux croisés dynamiques, analyse de données</p>
+            <span class="project-link is-disabled">Lien de téléchargement à ajouter</span>
+          </div>
+        </article>
+        <article class="project is-placeholder">
+          <div class="project-media">Image à ajouter</div>
+          <div class="project-body">
+            <p class="placeholder-flag">Exemple à remplacer</p>
+            <h3>Analyse de coûts</h3>
+            <p>Contexte en une ligne&nbsp;: dans quel cadre ce projet a été réalisé.</p>
+            <p class="project-skills">Compétences&nbsp;: comptabilité de gestion, calcul de coûts, Excel</p>
+            <span class="project-link is-disabled">Lien de téléchargement à ajouter</span>
+          </div>
+        </article>
+        <article class="project is-placeholder">
+          <div class="project-media">Image à ajouter</div>
+          <div class="project-body">
+            <p class="placeholder-flag">Exemple à remplacer</p>
+            <h3>Business plan</h3>
+            <p>Contexte en une ligne&nbsp;: dans quel cadre ce projet a été réalisé.</p>
+            <p class="project-skills">Compétences&nbsp;: prévisionnel, analyse financière, rédaction</p>
+            <span class="project-link is-disabled">Lien de téléchargement à ajouter</span>
+          </div>
         </article>
       </div>
-
-      <p class="cert-note reveal">
-        <span class="mono">Certification</span> : BAFA, La Ligue de l'enseignement, Beauvais (2024–2025).
-        Au-delà de l'encadrement, cette expérience m'a surtout appris à assumer une responsabilité concrète
-        sur le terrain : décider vite, m'adapter, et rendre des comptes sur ce qui a été fait.
-      </p>
     </div>
   </section>
 
-  <!-- ============ COMPÉTENCES ============ -->
-  <section class="section section-alt" id="competences">
-    <div class="container">
-      <p class="section-eyebrow reveal">04 · Compétences</p>
-      <h2 class="section-title reveal">Ce que je sais faire</h2>
+  <!-- ===================== 06 PROJET PROFESSIONNEL ===================== -->
+  <section class="section section-alt" id="projet" aria-labelledby="projet-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="projet-titre"><span class="section-num" aria-hidden="true">06</span>Projet professionnel</h2>
+      <p class="section-intro">Deux directions m'attirent aujourd'hui, pour des raisons différentes.</p>
 
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3>Gestion &amp; finance</h3>
-          <p>Les bases de la comptabilité générale sont acquises, et j'ai déjà dépassé ce socle
-          grâce à ma formation en GC2F : écritures comptables, TVA, bilan et compte de résultat
-          n'ont plus de secret pour moi. À cela s'ajoutent le suivi et l'analyse de données
-          financières, ainsi que la participation au suivi administratif de dossiers réels
-          lors de mon stage chez Initiative Oise Ouest.</p>
+      <!-- Les deux pistes présentées comme un compte en T -->
+      <div class="t-account">
+        <div class="t-side">
+          <h3>Expertise comptable</h3>
+          <p>Elle me plaît par la rigueur et la précision qu'elle exige, avec la possibilité de poursuivre jusqu'au master et, si mon projet évolue dans ce sens, d'aller plus loin encore, vers la recherche.</p>
         </div>
-
-        <div class="skill-card reveal" style="--delay:80ms">
-          <h3>Excel</h3>
-          <p>Utilisé en conditions réelles pour organiser et mettre en forme des données financières
-          d'entreprises accompagnées : <span class="mono">RECHERCHEX</span>,
-          <span class="mono">tableaux croisés dynamiques</span> et
-          <span class="mono">SOMME.SI.ENS</span> pour croiser et vérifier des données chiffrées.</p>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:160ms">
-          <h3>Langues</h3>
-          <p>Français : langue maternelle.<br>
-          Anglais : niveau B2, TOEIC visé en 2027.<br>
-          Espagnol : niveau B1.</p>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:240ms">
-          <h3>Méthode de travail</h3>
-          <p>Rigueur et organisation dans le traitement de l'information, esprit d'analyse,
-          autonomie sur les missions qui me sont confiées.</p>
+        <div class="t-side">
+          <h3>Finance</h3>
+          <p>Elle m'attire pour sa dimension d'analyse et de décision, avec une poursuite en master pour m'y spécialiser.</p>
         </div>
       </div>
+
+      <div class="approach">
+        <p class="approach-lead">Je n'ai pas encore tranché. Ce n'est pas de l'indécision, c'est une démarche volontaire.</p>
+        <p>Je préfère confronter mes connaissances théoriques à la réalité du terrain plutôt que de choisir sur la seule base de ce que j'imagine depuis les bancs de l'IUT. C'est précisément le rôle que je donne à mon stage et à mon alternance&nbsp;: ils m'aideront à préciser, avec des faits, l'environnement dans lequel je veux construire ma carrière.</p>
+      </div>
+
+      <ol class="roadmap" aria-label="Mes prochaines étapes">
+        <li>
+          <p class="roadmap-when">Janvier et février&nbsp;2027</p>
+          <h3>Stage</h3>
+          <p>Confronter mes connaissances à la réalité d'une entreprise.</p>
+        </li>
+        <li>
+          <p class="roadmap-when">À partir de septembre&nbsp;2027</p>
+          <h3>Alternance d'un an</h3>
+          <p>Dans le cadre de ma poursuite d'études en master, avec l'envie de continuer au-delà si le master et l'entreprise le permettent.</p>
+        </li>
+        <li>
+          <p class="roadmap-when">Ensuite</p>
+          <h3>Un choix fondé sur des faits</h3>
+          <p>Expertise comptable ou finance, selon ce que le terrain m'aura appris.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ============ PROJET PROFESSIONNEL ============ -->
-  <section class="section" id="projet">
-    <div class="container">
-      <p class="section-eyebrow reveal">05 · Projet professionnel</p>
-      <h2 class="section-title reveal">Où je veux aller</h2>
+  <!-- ===================== 07 CENTRES D'INTÉRÊT ===================== -->
+  <section class="section" id="interets" aria-labelledby="interets-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="interets-titre"><span class="section-num" aria-hidden="true">07</span>Centres d'intérêt</h2>
+      <div class="interests">
+        <div class="interest">
+          <h3>Comprendre avant de se faire un avis</h3>
+          <p>Je suis assez attentif à l'actualité et à la politique&nbsp;: j'aime comprendre les décisions économiques avant de me faire un avis dessus. Les nouvelles technologies et l'intelligence artificielle m'intéressent pour la même raison&nbsp;: je préfère comprendre comment un outil fonctionne que simplement l'utiliser.</p>
+        </div>
+        <div class="interest">
+          <h3>La justesse, en musique aussi</h3>
+          <p>Je joue de la batterie et du piano, deux instruments qui, comme les chiffres, ne pardonnent pas l'approximation.</p>
+        </div>
+        <div class="interest">
+          <h3>Progresser sur la durée</h3>
+          <p>Je pratique le tennis et la musculation, deux disciplines où les progrès se construisent sur la durée, une logique qui me convient bien.</p>
+        </div>
+      </div>
+      <p class="interests-summary">En résumé&nbsp;: les mathématiques et les chiffres, l'actualité et la politique, l'innovation et l'intelligence artificielle, la batterie et le piano, le tennis, la musculation et les voyages.</p>
+    </div>
+  </section>
 
-      <div class="text-columns">
-        <div class="reveal">
-          <p>
-            Deux directions m'attirent aujourd'hui, pour des raisons différentes.
-            L'<strong>expertise comptable</strong> me plaît par la rigueur et la précision
-            qu'elle exige, avec la possibilité de poursuivre jusqu'au master, et,
-            si mon projet évolue dans ce sens, potentiellement plus loin encore.
-            La <strong>finance</strong> m'attire pour sa dimension d'analyse et
-            de décision, avec une poursuite en master pour m'y spécialiser.
+  <!-- ===================== 08 CONTACT ===================== -->
+  <section class="section section-alt" id="contact" aria-labelledby="contact-titre">
+    <div class="container reveal">
+      <h2 class="section-title" id="contact-titre"><span class="section-num" aria-hidden="true">08</span>Contact</h2>
+      <div class="contact">
+        <div class="contact-main">
+          <p class="contact-lede">Je suis disponible pour un stage du 4&nbsp;janvier au 27&nbsp;février&nbsp;2027, et pour une alternance d'un an à partir de septembre&nbsp;2027. N'hésitez pas à me contacter.</p>
+          <a class="contact-email" href="mailto:jpires@etik.com">jpires@etik.com</a>
+          <p class="copy-row">
+            <button type="button" class="copy-btn" id="copy-email" data-email="jpires@etik.com">Copier l'adresse</button>
+            <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
           </p>
+          <div class="contact-actions">
+            <a href="mailto:jpires@etik.com" class="btn btn-primary">Écrire un email</a>
+            <a href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener" class="btn btn-secondary">Voir mon profil LinkedIn</a>
+          </div>
         </div>
-        <div class="reveal" style="--delay:80ms">
-          <p>
-            Je n'ai pas encore tranché. Ce n'est pas de l'indécision, c'est une
-            démarche volontaire. Je préfère confronter mes connaissances théoriques
-            à la réalité du terrain plutôt que de choisir sur la seule base de ce que
-            j'imagine depuis les bancs de l'IUT. C'est précisément le rôle que je donne
-            à mon stage et à mon alternance : ils m'aideront à préciser, avec des faits,
-            l'environnement dans lequel je veux construire ma carrière.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CENTRES D'INTÉRÊT ============ -->
-  <section class="section section-alt" id="interets">
-    <div class="container">
-      <p class="section-eyebrow reveal">06 · Centres d'intérêt</p>
-      <h2 class="section-title reveal">En dehors des cours</h2>
-
-      <div class="interests reveal">
-        <p>
-          Je suis assez attentif à l'actualité et à la politique : j'aime comprendre
-          les décisions économiques avant de me faire un avis dessus. Les nouvelles
-          technologies et l'intelligence artificielle m'intéressent pour la même raison :
-          je préfère comprendre comment un outil fonctionne que simplement l'utiliser.
-          Côté musique, je joue de la batterie et du piano, deux instruments qui, comme
-          les chiffres, ne pardonnent pas l'approximation. Je pratique aussi le tennis et
-          la musculation, deux disciplines où les progrès se construisent sur la durée,
-          une logique qui me convient bien.
-        </p>
-        <ul class="tag-list">
-          <li>Mathématiques &amp; chiffres</li>
-          <li>Actualité &amp; politique</li>
-          <li>Innovation &amp; IA</li>
-          <li>Batterie &amp; piano</li>
-          <li>Tennis</li>
-          <li>Musculation</li>
-          <li>Voyages</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <p class="section-eyebrow reveal">07 · Contact</p>
-      <h2 class="section-title reveal">Discutons</h2>
-      <p class="contact-lede reveal">
-        Je suis disponible pour un stage du 4 janvier au 27 février 2027, et pour une
-        alternance d'un an à partir de septembre 2027. N'hésitez pas à me contacter.
-      </p>
-
-      <div class="contact-grid reveal" style="--delay:80ms">
-        <div class="contact-info">
-          <dl class="ledger">
-            <div class="ledger-row">
-              <dt>Email</dt>
-              <dd><a href="mailto:jpires@etik.com">jpires@etik.com</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Téléphone</dt>
-              <dd><a href="tel:+33782626070" class="mono">07 82 62 60 70</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>LinkedIn</dt>
-              <dd><a href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener">linkedin.com/in/julien-pires</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Localisation</dt>
-              <dd>Amiens</dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Mobilité</dt>
-              <dd>Permis B · véhicule personnel</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="contact-actions">
-          <a href="mailto:jpires@etik.com" class="btn btn-primary btn-block">Écrire un email</a>
-          <a href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener" class="btn btn-secondary btn-block">Voir mon LinkedIn</a>
-        </div>
+        <dl class="contact-details">
+          <div><dt>Téléphone</dt><dd><a href="tel:+33782626070">07&nbsp;82&nbsp;62&nbsp;60&nbsp;70</a></dd></div>
+          <div><dt>Localisation</dt><dd>Amiens</dd></div>
+          <div><dt>Mobilité</dt><dd>Permis B et véhicule personnel</dd></div>
+        </dl>
       </div>
     </div>
   </section>
@@ -371,7 +386,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Julien Pires, Amiens</p>
-    <a href="#accueil">Haut de page ↑</a>
+    <a href="#accueil">Retour en haut</a>
   </div>
 </footer>
 
