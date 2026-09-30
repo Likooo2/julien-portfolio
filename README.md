@@ -1,49 +1,22 @@
-# Site de Julien Pires — Guide rapide
+# Portfolio de Julien Pires
 
-## 1. Ta photo
-✅ Déjà intégrée : `images/julien.jpg`. Rien à faire.
-Pour la changer un jour : remplace ce fichier par une nouvelle image **au même nom**
-(`julien.jpg`), idéalement en format portrait (ratio proche de 3:4), au moins 900px
-de large, en JPG.
+Site personnel en une page, publié avec GitHub Pages :
+https://likooo2.github.io/julien-portfolio/
 
-## 2. Ton CV (PDF) — à faire
-Le bouton "Télécharger mon CV" pointe vers `cv/CV_Julien_Pires.pdf`, mais ce fichier
-n'existe pas encore (je n'avais que ton CV en `.docx`, pas de PDF).
+HTML, CSS et JavaScript, sans bibliothèque externe ni appel à un service tiers.
 
-**À faire :**
-1. Exporte ton CV Word en PDF (dans Word : Fichier → Enregistrer sous → format PDF).
-2. Nomme le fichier exactement `CV_Julien_Pires.pdf`.
-3. Place-le dans le dossier `cv/` du site, à la racine (remplace le fichier existant s'il y en a un).
+## Structure
 
-Si tu changes le nom du fichier, remplace `cv/CV_Julien_Pires.pdf` par ton nouveau nom
-dans `index.html` (3 occurrences, cherche `href="cv/`).
+- `index.html` : tout le contenu, dans l'ordre de la page (accueil, puis sections 01 à 07)
+- `css/styles.css` : le design ; couleurs, typographie et espacements sont réglés dans les variables en haut du fichier
+- `js/script.js` : écran d'accueil, menu mobile, section active, apparitions au défilement, copie de l'email, formulaire
+- `fonts/` : Fraunces (titres) et Inter (texte), hébergées sur le site
+- `images/` : photo en WebP (480, 720 et 900 px) avec le PNG d'origine en secours, image de partage `og-image.jpg` (1200 x 630), favicons
 
-## 3. LinkedIn
-✅ Déjà intégré avec ton lien : `linkedin.com/in/julien-pires-460977383`.
-Pour le changer : cherche `linkedin.com/in/julien-pires` dans `index.html` (2 occurrences)
-et remplace l'URL dans les attributs `href`.
+## Modifier un texte
 
-## 4. Modifier un texte
-Tous les textes sont directement dans `index.html`, dans du français normal — pas besoin
-de savoir coder pour les repérer et les modifier avec un éditeur de texte (ou même le Bloc-notes).
+Ouvrir `index.html` et chercher la phrase : chaque section est repérée par un commentaire (`01 À PROPOS`, `02 FORMATION`, etc.).
 
-## 5. Mettre le site en ligne (gratuit) — recommandé : Netlify
+## Formulaire de contact
 
-**Option la plus simple (glisser-déposer, aucune inscription technique) :**
-1. Va sur [app.netlify.com/drop](https://app.netlify.com/drop)
-2. Crée un compte gratuit (email ou GitHub)
-3. Glisse le **dossier entier** `site` (celui qui contient `index.html`, `css/`, `js/`, `images/`, `cv/`) dans la zone de dépôt
-4. Netlify te donne immédiatement un lien du type `https://ton-site-1234.netlify.app`
-5. Tu peux renommer ce lien gratuitement dans Site settings → Change site name (ex: `julien-pires.netlify.app`)
-
-**Nom de domaine personnel (optionnel, payant, ex: julienpires.fr) :**
-Dans Netlify : Domain settings → Add a domain, puis suis les instructions pour connecter
-un domaine acheté chez un registrar (OVH, Namecheap, etc.).
-
-**Alternative : GitHub Pages** (si tu es à l'aise avec Git) — gratuit aussi, héberge
-directement depuis un dépôt GitHub.
-
-## 6. À vérifier avant d'envoyer le lien
-- [ ] Le PDF du CV est bien dans `cv/CV_Julien_Pires.pdf`
-- [ ] Teste le site sur ton téléphone (le lien Netlify fonctionne partout)
-- [ ] Vérifie que le bouton email et le lien LinkedIn s'ouvrent bien
+Le site est statique : le formulaire ne s'envoie pas sur un serveur, il ouvre la messagerie du visiteur avec le message déjà rédigé, adressé à jpires@etik.com.

@@ -2,379 +2,552 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Julien Pires, étudiant BUT GEA, Gestion Comptable, Fiscale et Financière</title>
-<meta name="description" content="Julien Pires, étudiant en BUT GEA (GC2F) à l'IUT d'Amiens, à la recherche d'un stage (janvier–février 2027) et d'une alternance (dès septembre 2027) en comptabilité, finance ou gestion.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julien Pires, étudiant en BUT GEA (GC2F), stage et alternance</title>
+<meta name="description" content="Julien Pires, étudiant en 2e année de BUT GEA (parcours GC2F) à l'IUT d'Amiens, recherche un stage du 4 janvier au 27 février 2027 et une alternance d'un an dès septembre 2027 en comptabilité, finance ou gestion.">
+<meta name="author" content="Julien Pires">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://likooo2.github.io/julien-portfolio/">
 
-<!-- Open Graph -->
+<!-- Aperçu lors d'un partage (LinkedIn, messageries) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Julien Pires, BUT GEA, Gestion Comptable, Fiscale et Financière">
-<meta property="og:description" content="Étudiant à l'IUT d'Amiens, à la recherche d'un stage et d'une alternance en comptabilité, finance ou gestion.">
-<meta property="og:image" content="images/julien.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Julien Pires">
+<meta property="og:url" content="https://likooo2.github.io/julien-portfolio/">
+<meta property="og:title" content="Julien Pires, étudiant en BUT GEA (GC2F)">
+<meta property="og:description" content="À la recherche d'un stage (janvier et février 2027) et d'une alternance (dès septembre 2027) en comptabilité, finance ou gestion.">
+<meta property="og:image" content="https://likooo2.github.io/julien-portfolio/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Julien Pires, étudiant en BUT GEA à l'IUT d'Amiens, en recherche de stage et d'alternance">
+<meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..600;1,9..144,400..500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/styles.css">
+
+<script>
+  document.documentElement.classList.add('js');
+  try { if (sessionStorage.getItem('jp-intro')) document.documentElement.classList.add('intro-seen'); } catch (e) {}
+  setTimeout(function () { if (!window.jpReady) document.documentElement.classList.add('js-fallback'); }, 3000);
+</script>
+<script src="js/script.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Julien Pires",
+  "url": "https://likooo2.github.io/julien-portfolio/",
+  "image": "https://likooo2.github.io/julien-portfolio/images/og-image.jpg",
+  "jobTitle": "Étudiant en BUT GEA, parcours Gestion comptable, fiscale et financière",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "IUT d'Amiens" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Amiens", "addressCountry": "FR" },
+  "knowsLanguage": ["fr", "en", "es"],
+  "sameAs": ["https://www.linkedin.com/in/julien-pires-460977383"]
+}
+</script>
 </head>
+
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<a class="skip-link" href="#accueil-contenu">Aller au contenu</a>
+<!-- Icônes : définies une seule fois, réutilisées partout avec <use> -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect x="2" y="6" width="20" height="14" rx="2"/></symbol>
+  <symbol id="i-calculator" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></symbol>
+  <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 9v12"/><path d="M15 9v12"/></symbol>
+  <symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+  <symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/><circle cx="12" cy="8" r="6"/></symbol>
+  <symbol id="i-clipboard-check" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="i-trending-up" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="14" height="14" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.02.94l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+</svg>
 
-<div class="intro-overlay" id="intro-overlay" aria-hidden="true">
-  <p class="intro-text">
-    Bienvenue.
-    <span class="intro-text-soft">Content que vous soyez là.</span>
-  </p>
+<!-- Écran d'accueil : affiché une seule fois par visite -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-inner">
+    <p class="intro-title">Bienvenue.</p>
+    <p class="intro-sub">Content que vous soyez là.</p>
+    <span class="intro-line"></span>
+  </div>
 </div>
 
-
-<header class="site-header" id="header">
+<header class="header" id="header">
   <div class="container header-inner">
-    <a href="#accueil" class="logo" aria-label="Retour à l'accueil">
-      <span class="logo-mark">JP</span>
-      <span class="logo-name">Julien&nbsp;Pires</span>
+    <a class="brand" href="#accueil" aria-label="Julien Pires, retour à l'accueil">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span class="brand-text">
+        <span class="brand-name">Julien Pires</span>
+        <span class="brand-role">BUT GEA · GC2F</span>
+      </span>
     </a>
 
-    <nav class="main-nav" id="main-nav">
-      <a href="#a-propos">À propos</a>
-      <a href="#formation">Formation</a>
-      <a href="#experiences">Expériences</a>
-      <a href="#competences">Compétences</a>
-      <a href="#projet">Projet</a>
-      <a href="#interets">Intérêts</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav-list" role="list">
+        <li><a class="nav-link" href="#a-propos" data-nav>À propos</a></li>
+        <li><a class="nav-link" href="#formation" data-nav>Formation</a></li>
+        <li><a class="nav-link" href="#experiences" data-nav>Expériences</a></li>
+        <li><a class="nav-link" href="#competences" data-nav>Compétences</a></li>
+        <li><a class="nav-link" href="#projet" data-nav>Projet</a></li>
+        <li><a class="nav-link" href="#interets" data-nav>Intérêts</a></li>
+      </ul>
     </nav>
 
-    <div class="header-actions">
-      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <a class="btn btn-primary btn-sm header-cta" href="#contact" data-nav>Me contacter</a>
+
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span class="menu-toggle-box" aria-hidden="true"><span></span><span></span></span>
+    </button>
   </div>
+  <div class="progress" aria-hidden="true"><span class="progress-bar" id="progress-bar"></span></div>
 </header>
 
-<main id="accueil-contenu">
+<!-- Menu mobile plein écran -->
+<div class="menu" id="menu">
+  <nav aria-label="Menu mobile">
+    <ol class="menu-list" role="list">
+      <li style="--i:0"><a href="#a-propos" data-nav><span class="menu-num">01</span>À propos</a></li>
+      <li style="--i:1"><a href="#formation" data-nav><span class="menu-num">02</span>Formation</a></li>
+      <li style="--i:2"><a href="#experiences" data-nav><span class="menu-num">03</span>Expériences</a></li>
+      <li style="--i:3"><a href="#competences" data-nav><span class="menu-num">04</span>Compétences</a></li>
+      <li style="--i:4"><a href="#projet" data-nav><span class="menu-num">05</span>Projet professionnel</a></li>
+      <li style="--i:5"><a href="#interets" data-nav><span class="menu-num">06</span>Centres d'intérêt</a></li>
+      <li style="--i:6"><a href="#contact" data-nav><span class="menu-num">07</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu-footer">
+    <a class="btn btn-primary btn-lg btn-block" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Me contacter</a>
+    <p class="menu-meta">Stage du 4&nbsp;janvier au 27&nbsp;février&nbsp;2027 · Alternance dès septembre&nbsp;2027</p>
+  </div>
+</div>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="accueil">
+<main id="contenu">
+
+  <!-- ============================ ACCUEIL ============================ -->
+  <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-grid">
-      <div class="hero-text reveal">
-        <p class="eyebrow">Amiens · BUT GEA, Gestion Comptable, Fiscale et Financière</p>
-        <h1>Julien Pires</h1>
-        <p class="hero-lede">
-          Étudiant en 2ᵉ année de BUT GEA à l'IUT d'Amiens. Je m'intéresse au chiffre juste,
-          à la rigueur qu'il impose et à ce qu'il permet de comprendre d'une entreprise,
-          et je cherche aujourd'hui un terrain pour transformer ça en compétences réelles.
-        </p>
+      <div class="hero-content">
+        <p class="status" data-hero style="--d:0"><span class="status-dot" aria-hidden="true"></span>En recherche de stage et d'alternance</p>
+        <h1 class="hero-title" id="hero-title" data-hero style="--d:1">Julien Pires</h1>
+        <p class="hero-tagline" data-hero style="--d:2">Étudiant en 2<sup>e</sup>&nbsp;année de BUT GEA à l'IUT d'Amiens, parcours Gestion comptable, fiscale et financière.</p>
+        <p class="hero-lede" data-hero style="--d:3">Je m'intéresse au chiffre juste, à la rigueur qu'il impose et à ce qu'il permet de comprendre d'une entreprise, et je cherche aujourd'hui un terrain pour transformer ça en compétences réelles.</p>
 
-        <dl class="ledger">
-          <div class="ledger-row">
-            <dt>Stage</dt>
-            <dd><span class="mono">04.01.2027 → 27.02.2027</span></dd>
+        <div class="card search-card" data-hero style="--d:4">
+          <div class="search-card-head">
+            <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-briefcase"/></svg></span>
+            <h2 class="search-card-title">Ce que je recherche</h2>
           </div>
-          <div class="ledger-row">
-            <dt>Alternance</dt>
-            <dd><span class="mono">Dès 09.2027, 1 an, cadre du master</span></dd>
-          </div>
-          <div class="ledger-row">
-            <dt>Domaines</dt>
-            <dd>Comptabilité · Finance · Gestion · Contrôle de gestion</dd>
-          </div>
-        </dl>
+          <dl class="ledger">
+            <div class="ledger-row"><dt>Stage</dt><dd>Du 4&nbsp;janvier au 27&nbsp;février&nbsp;2027</dd></div>
+            <div class="ledger-row"><dt>Alternance</dt><dd>1&nbsp;an dès septembre&nbsp;2027, en master</dd></div>
+            <div class="ledger-row"><dt>Domaines</dt><dd>
+              <ul class="chips" role="list">
+                <li class="chip">Comptabilité</li><li class="chip">Finance</li><li class="chip">Gestion</li><li class="chip">Contrôle de gestion</li>
+              </ul>
+            </dd></div>
+          </dl>
+        </div>
 
-        <div class="hero-actions">
-          <a href="#a-propos" class="btn btn-primary">Découvrir mon profil</a>
-          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        <div class="hero-actions" data-hero style="--d:5">
+          <a class="btn btn-primary btn-lg" href="#a-propos">Découvrir mon profil<svg class="icon icon-nudge-down" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+          <a class="btn btn-secondary btn-lg" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Me contacter</a>
         </div>
       </div>
 
-      <div class="hero-photo reveal" style="--delay:120ms">
-        <figure>
-          <img src="images/julien.png" alt="Portrait de Julien Pires" width="900" height="1198">
-          <figcaption><span class="mono">Voilà, tel que je suis</span></figcaption>
+      <div class="hero-visual" data-hero style="--d:2">
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <picture>
+              <source type="image/webp" srcset="images/julien-480.webp 480w, images/julien-720.webp 720w, images/julien-900.webp 900w" sizes="(max-width: 899px) min(88vw, 420px), 440px">
+              <img src="images/julien.png" width="900" height="1198" alt="Julien Pires, souriant, en chemise blanche, les mains jointes devant lui" fetchpriority="high">
+            </picture>
+          </div>
+          <figcaption class="portrait-caption">Voilà, tel que je suis</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- ============ À PROPOS ============ -->
-  <section class="section" id="a-propos">
+  <!-- ============================ 01 À PROPOS ============================ -->
+  <section class="section section-alt" id="a-propos" aria-labelledby="a-propos-title">
     <div class="container">
-      <p class="section-eyebrow reveal">01 · À propos</p>
-      <h2 class="section-title reveal">Construire méthodiquement, avancer par curiosité.</h2>
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">01</span>À propos</p>
+        <h2 class="section-title" id="a-propos-title">Construire méthodiquement, avancer par curiosité.</h2>
+      </header>
 
-      <div class="text-columns">
-        <div class="reveal">
-          <p>
-            J'ai 19 ans et j'aime les situations où un problème peut se décomposer,
-            se vérifier et se résoudre proprement, ce qui explique en grande partie ce qui m'a
-            amené vers la gestion, la comptabilité et l'analyse financière. Quand un
-            objectif m'intéresse vraiment, j'ai tendance à chercher activement les
-            moyens de l'atteindre plutôt que d'attendre que les choses se présentent :
-            c'est ce qui m'a poussé, par exemple, à multiplier les expériences depuis
-            le lycée plutôt que d'attendre la fin de mes études pour découvrir le monde
-            professionnel.
-          </p>
+      <div class="about-grid">
+        <div class="prose" data-reveal>
+          <p class="lead">J'ai 19&nbsp;ans et j'aime les situations où un problème peut se décomposer, se vérifier et se résoudre proprement. C'est en grande partie ce qui m'a amené vers la gestion, la comptabilité et l'analyse financière.</p>
+          <p>Quand un objectif m'intéresse vraiment, j'ai tendance à chercher activement les moyens de l'atteindre plutôt que d'attendre que les choses se présentent&nbsp;: c'est ce qui m'a poussé, par exemple, à multiplier les expériences depuis le lycée plutôt que d'attendre la fin de mes études pour découvrir le monde professionnel.</p>
+          <p>Je n'ai pas la prétention de tout savoir&nbsp;: je suis au tout début de mon parcours, et je le sais. En revanche, j'apprends vite, je suis autonome dans ce que j'entreprends, et je préfère largement comprendre correctement une notion que la survoler. C'est cette base que je cherche aujourd'hui à confronter à la réalité d'une entreprise, à travers un stage puis une alternance.</p>
         </div>
-        <div class="reveal" style="--delay:80ms">
-          <p>
-            Je n'ai pas la prétention de tout savoir : je suis au tout début de mon
-            parcours, et je le sais. En revanche, j'apprends vite, je suis autonome
-            dans ce que j'entreprends, et je préfère largement comprendre correctement
-            une notion que la survoler. C'est cette base que je cherche aujourd'hui à
-            confronter à la réalité d'une entreprise, à travers un stage puis une
-            alternance.
-          </p>
-        </div>
+
+        <aside class="card facts" data-reveal style="--d:1" aria-labelledby="facts-title">
+          <h3 class="card-kicker" id="facts-title">En bref</h3>
+          <dl class="ledger">
+            <div class="ledger-row"><dt>Âge</dt><dd>19&nbsp;ans</dd></div>
+            <div class="ledger-row"><dt>Formation</dt><dd>BUT GEA, 2<sup>e</sup>&nbsp;année</dd></div>
+            <div class="ledger-row"><dt>Parcours</dt><dd>Gestion comptable, fiscale et financière</dd></div>
+            <div class="ledger-row"><dt>Langues</dt><dd>Anglais B2, espagnol B1</dd></div>
+            <div class="ledger-row"><dt>Mobilité</dt><dd>Permis B et véhicule personnel</dd></div>
+            <div class="ledger-row"><dt>Ville</dt><dd>Amiens</dd></div>
+          </dl>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- ============ FORMATION ============ -->
-  <section class="section section-alt" id="formation">
+  <!-- ============================ 02 FORMATION ============================ -->
+  <section class="section" id="formation" aria-labelledby="formation-title">
     <div class="container">
-      <p class="section-eyebrow reveal">02 · Formation</p>
-      <h2 class="section-title reveal">Parcours académique</h2>
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">02</span>Formation</p>
+        <h2 class="section-title" id="formation-title">Parcours académique</h2>
+      </header>
 
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-date mono">Depuis 09.2025</div>
-          <div class="timeline-body">
-            <h3>BUT Gestion des Entreprises et des Administrations</h3>
-            <p class="timeline-org">Parcours Gestion Comptable, Fiscale et Financière (GC2F), IUT d'Amiens</p>
-            <ul>
+      <ol class="timeline" role="list" data-reveal-line>
+        <li class="timeline-item is-current" data-reveal>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="card card-hover timeline-card">
+            <div class="timeline-meta">
+              <span class="chip chip-date">Depuis septembre&nbsp;2025</span>
+              <span class="chip chip-live">En cours</span>
+            </div>
+            <h3>BUT Gestion des entreprises et des administrations</h3>
+            <p class="timeline-org">Parcours Gestion comptable, fiscale et financière (GC2F), IUT d'Amiens</p>
+            <ul class="bullets" role="list">
               <li>Production et contrôle de l'information comptable, fiscale et sociale</li>
               <li>Analyse de l'activité et outils de prévision</li>
               <li>Comptabilité, fiscalité et gestion financière</li>
             </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:80ms">
-          <div class="timeline-date mono">2022 → 2025</div>
-          <div class="timeline-body">
+          </article>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="card card-hover timeline-card">
+            <div class="timeline-meta">
+              <span class="chip chip-date">2022 → 2025</span>
+              <span class="chip chip-soft">Diplôme obtenu</span>
+            </div>
             <h3>Baccalauréat général, mention assez bien</h3>
             <p class="timeline-org">Lycée Félix Faure, Beauvais</p>
-            <ul>
-              <li>Spécialités Mathématiques, SES, NSI</li>
-            </ul>
-          </div>
-        </article>
-      </div>
+            <div class="timeline-tags">
+              <span class="timeline-tags-label">Spécialités</span>
+              <ul class="chips" role="list"><li class="chip chip-soft">Mathématiques</li><li class="chip chip-soft">SES</li><li class="chip chip-soft">NSI</li></ul>
+            </div>
+          </article>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ============ EXPÉRIENCES ============ -->
-  <section class="section" id="experiences">
+  <!-- ============================ 03 EXPÉRIENCES ============================ -->
+  <section class="section section-alt" id="experiences" aria-labelledby="experiences-title">
     <div class="container">
-      <p class="section-eyebrow reveal">03 · Expériences</p>
-      <h2 class="section-title reveal">Expériences professionnelles</h2>
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">03</span>Expériences</p>
+        <h2 class="section-title" id="experiences-title">Expériences professionnelles</h2>
+      </header>
 
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <div class="timeline-date mono">06 → 07.2026</div>
-          <div class="timeline-body">
+      <ol class="timeline" role="list" data-reveal-line>
+        <li class="timeline-item" data-reveal>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="card card-hover timeline-card">
+            <div class="timeline-meta">
+              <span class="chip chip-date">Juin → juillet&nbsp;2026</span>
+              <span class="chip chip-soft">Emploi</span>
+            </div>
             <h3>Employé polyvalent</h3>
             <p class="timeline-org">Lidl, Beauvais</p>
-            <ul>
+            <ul class="bullets" role="list">
               <li>Gestion quotidienne des encaissements en espèces et par carte</li>
               <li>Contrôle rigoureux des flux et respect des procédures internes</li>
               <li>Travail dans un environnement soutenu, exigeant rapidité et fiabilité</li>
             </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:80ms">
-          <div class="timeline-date mono">02 → 03.2026</div>
-          <div class="timeline-body">
+          </article>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="card card-hover timeline-card">
+            <div class="timeline-meta">
+              <span class="chip chip-date">Février → mars&nbsp;2026</span>
+              <span class="chip">Stage</span>
+            </div>
             <h3>Stagiaire, accompagnement de jeunes entreprises</h3>
             <p class="timeline-org">Initiative Oise Ouest</p>
-            <ul>
+            <ul class="bullets" role="list">
               <li>Accompagnement de jeunes entrepreneurs dans le suivi de leur comptabilité et de leur activité</li>
               <li>Utilisation d'Excel pour organiser, suivre et mettre en forme des données financières</li>
               <li>Analyse d'informations financières et participation au suivi administratif des dossiers</li>
             </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal" style="--delay:160ms">
-          <div class="timeline-date mono">07 → 08.2025</div>
-          <div class="timeline-body">
+          </article>
+        </li>
+        <li class="timeline-item" data-reveal>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="card card-hover timeline-card">
+            <div class="timeline-meta">
+              <span class="chip chip-date">Juillet → août&nbsp;2025</span>
+              <span class="chip chip-soft">Emploi</span>
+            </div>
             <h3>Animateur <span class="badge">BAFA</span></h3>
             <p class="timeline-org">Centre de loisirs La Ribambelle, Beauvais</p>
-            <ul>
-              <li>Encadrement d'un groupe d'enfants de 8 ans, organisation d'activités</li>
+            <ul class="bullets" role="list">
+              <li>Encadrement d'un groupe d'enfants de 8&nbsp;ans, organisation d'activités</li>
               <li>Gestion du planning et adaptation aux imprévus</li>
               <li>Travail en équipe et prise de responsabilités</li>
             </ul>
-          </div>
+          </article>
+        </li>
+      </ol>
+
+      <aside class="card callout" data-reveal aria-labelledby="bafa-title">
+        <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-award"/></svg></span>
+        <div>
+          <h3 class="callout-title" id="bafa-title">Certification BAFA</h3>
+          <p class="callout-meta">La Ligue de l'enseignement, Beauvais (2024–2025)</p>
+          <p>Au-delà de l'encadrement, cette expérience m'a surtout appris à assumer une responsabilité concrète sur le terrain&nbsp;: décider vite, m'adapter, et rendre des comptes sur ce qui a été fait.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================ 04 COMPÉTENCES ============================ -->
+  <section class="section" id="competences" aria-labelledby="competences-title">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">04</span>Compétences</p>
+        <h2 class="section-title" id="competences-title">Ce que je sais faire</h2>
+      </header>
+
+      <div class="skills">
+        <article class="card card-hover skill skill-wide" data-reveal>
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-calculator"/></svg></span>
+          <h3>Gestion &amp; finance</h3>
+          <p>Les bases de la comptabilité générale sont acquises, et j'ai déjà dépassé ce socle grâce à ma formation en GC2F&nbsp;: écritures comptables, TVA, bilan et compte de résultat n'ont plus de secret pour moi. À cela s'ajoutent le suivi et l'analyse de données financières, ainsi que la participation au suivi administratif de dossiers réels lors de mon stage chez Initiative Oise Ouest.</p>
+        </article>
+        <article class="card card-hover skill" data-reveal style="--d:1">
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-sheet"/></svg></span>
+          <h3>Excel</h3>
+          <p>Utilisé en conditions réelles pour organiser et mettre en forme des données financières d'entreprises accompagnées, ainsi que pour croiser et vérifier des données chiffrées.</p>
+          <ul class="chips" role="list" aria-label="Fonctions utilisées">
+            <li class="chip chip-code">RECHERCHEX</li><li class="chip chip-code">SOMME.SI.ENS</li><li class="chip">Tableaux croisés dynamiques</li>
+          </ul>
+        </article>
+        <article class="card card-hover skill" data-reveal>
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-languages"/></svg></span>
+          <h3>Langues</h3>
+          <ul class="langs" role="list">
+            <li><span class="lang-name">Français</span><span class="chip">Langue maternelle</span></li>
+            <li><span class="lang-name">Anglais</span><span class="lang-level"><span class="lang-note">TOEIC visé en 2027</span><span class="chip">B2</span></span></li>
+            <li><span class="lang-name">Espagnol</span><span class="chip">B1</span></li>
+          </ul>
+        </article>
+        <article class="card card-hover skill skill-wide" data-reveal style="--d:1">
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-list-checks"/></svg></span>
+          <h3>Méthode de travail</h3>
+          <p>Rigueur et organisation dans le traitement de l'information, esprit d'analyse, autonomie sur les missions qui me sont confiées.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 05 PROJET ============================ -->
+  <section class="section section-alt" id="projet" aria-labelledby="projet-title">
+    <div class="container">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">05</span>Projet professionnel</p>
+        <h2 class="section-title" id="projet-title">Où je veux aller</h2>
+        <p class="section-lead">Deux directions m'attirent aujourd'hui, pour des raisons différentes.</p>
+      </header>
+
+      <div class="paths">
+        <article class="card card-hover path" data-reveal>
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-clipboard-check"/></svg></span>
+          <h3 class="path-title">Expertise comptable</h3>
+          <p>L'expertise comptable me plaît par la rigueur et la précision qu'elle exige, avec la possibilité de poursuivre jusqu'au master, et, si mon projet évolue dans ce sens, potentiellement plus loin encore.</p>
+          <p class="path-foot"><span>Horizon</span>Master, voire au-delà</p>
+        </article>
+        <span class="paths-or" aria-hidden="true">ou</span>
+        <article class="card card-hover path" data-reveal style="--d:1">
+          <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-trending-up"/></svg></span>
+          <h3 class="path-title">Finance</h3>
+          <p>La finance m'attire pour sa dimension d'analyse et de décision, avec une poursuite en master pour m'y spécialiser.</p>
+          <p class="path-foot"><span>Horizon</span>Master spécialisé</p>
         </article>
       </div>
 
-      <p class="cert-note reveal">
-        <span class="mono">Certification</span> : BAFA, La Ligue de l'enseignement, Beauvais (2024–2025).
-        Au-delà de l'encadrement, cette expérience m'a surtout appris à assumer une responsabilité concrète
-        sur le terrain : décider vite, m'adapter, et rendre des comptes sur ce qui a été fait.
-      </p>
+      <div class="approach" data-reveal>
+        <p class="approach-lead">Je n'ai pas encore tranché. Ce n'est pas de l'indécision, c'est une démarche volontaire.</p>
+        <p>Je préfère confronter mes connaissances théoriques à la réalité du terrain plutôt que de choisir sur la seule base de ce que j'imagine depuis les bancs de l'IUT. C'est précisément le rôle que je donne à mon stage et à mon alternance&nbsp;: ils m'aideront à préciser, avec des faits, l'environnement dans lequel je veux construire ma carrière.</p>
+      </div>
+
+      <ol class="roadmap" role="list" aria-label="Mes prochaines étapes" data-reveal-line>
+        <li class="roadmap-step" data-reveal>
+          <span class="roadmap-node" aria-hidden="true">1</span>
+          <p class="roadmap-date">Janvier → février&nbsp;2027</p>
+          <h3>Stage</h3>
+          <p>Confronter mes connaissances à la réalité d'une entreprise.</p>
+        </li>
+        <li class="roadmap-step" data-reveal style="--d:1">
+          <span class="roadmap-node" aria-hidden="true">2</span>
+          <p class="roadmap-date">Dès septembre&nbsp;2027</p>
+          <h3>Alternance d'un an</h3>
+          <p>Dans le cadre de ma poursuite d'études en master, avec l'envie de continuer au-delà si l'entreprise et le master le permettent.</p>
+        </li>
+        <li class="roadmap-step" data-reveal style="--d:2">
+          <span class="roadmap-node" aria-hidden="true">3</span>
+          <p class="roadmap-date">Ensuite</p>
+          <h3>Un choix éclairé</h3>
+          <p>Expertise comptable ou finance, décidé avec des faits plutôt qu'avec des suppositions.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ============ COMPÉTENCES ============ -->
-  <section class="section section-alt" id="competences">
+  <!-- ============================ 06 CENTRES D'INTÉRÊT ============================ -->
+  <section class="section" id="interets" aria-labelledby="interets-title">
     <div class="container">
-      <p class="section-eyebrow reveal">04 · Compétences</p>
-      <h2 class="section-title reveal">Ce que je sais faire</h2>
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">06</span>Centres d'intérêt</p>
+        <h2 class="section-title" id="interets-title">En dehors des cours</h2>
+      </header>
 
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3>Gestion &amp; finance</h3>
-          <p>Les bases de la comptabilité générale sont acquises, et j'ai déjà dépassé ce socle
-          grâce à ma formation en GC2F : écritures comptables, TVA, bilan et compte de résultat
-          n'ont plus de secret pour moi. À cela s'ajoutent le suivi et l'analyse de données
-          financières, ainsi que la participation au suivi administratif de dossiers réels
-          lors de mon stage chez Initiative Oise Ouest.</p>
+      <div class="interests">
+        <div class="prose" data-reveal>
+          <p class="lead">Je suis assez attentif à l'actualité et à la politique&nbsp;: j'aime comprendre les décisions économiques avant de me faire un avis dessus. Les nouvelles technologies et l'intelligence artificielle m'intéressent pour la même raison&nbsp;: je préfère comprendre comment un outil fonctionne que simplement l'utiliser.</p>
+          <p>Côté musique, je joue de la batterie et du piano, deux instruments qui, comme les chiffres, ne pardonnent pas l'approximation. Je pratique aussi le tennis et la musculation, deux disciplines où les progrès se construisent sur la durée, une logique qui me convient bien.</p>
         </div>
-
-        <div class="skill-card reveal" style="--delay:80ms">
-          <h3>Excel</h3>
-          <p>Utilisé en conditions réelles pour organiser et mettre en forme des données financières
-          d'entreprises accompagnées : <span class="mono">RECHERCHEX</span>,
-          <span class="mono">tableaux croisés dynamiques</span> et
-          <span class="mono">SOMME.SI.ENS</span> pour croiser et vérifier des données chiffrées.</p>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:160ms">
-          <h3>Langues</h3>
-          <p>Français : langue maternelle.<br>
-          Anglais : niveau B2, TOEIC visé en 2027.<br>
-          Espagnol : niveau B1.</p>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:240ms">
-          <h3>Méthode de travail</h3>
-          <p>Rigueur et organisation dans le traitement de l'information, esprit d'analyse,
-          autonomie sur les missions qui me sont confiées.</p>
+        <div class="card interests-card" data-reveal style="--d:1">
+          <h3 class="card-kicker">Ce qui m'anime</h3>
+          <ul class="chips chips-lg" role="list">
+            <li class="chip chip-outline">Mathématiques &amp; chiffres</li>
+            <li class="chip chip-outline">Actualité &amp; politique</li>
+            <li class="chip chip-outline">Innovation &amp; IA</li>
+            <li class="chip chip-outline">Batterie &amp; piano</li>
+            <li class="chip chip-outline">Tennis</li>
+            <li class="chip chip-outline">Musculation</li>
+            <li class="chip chip-outline">Voyages</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROJET PROFESSIONNEL ============ -->
-  <section class="section" id="projet">
+  <!-- ============================ 07 CONTACT ============================ -->
+  <section class="section section-alt" id="contact" aria-labelledby="contact-title">
     <div class="container">
-      <p class="section-eyebrow reveal">05 · Projet professionnel</p>
-      <h2 class="section-title reveal">Où je veux aller</h2>
+      <header class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-num">07</span>Contact</p>
+        <h2 class="section-title" id="contact-title">Discutons</h2>
+        <p class="section-lead">Je suis disponible pour un stage du 4&nbsp;janvier au 27&nbsp;février&nbsp;2027, et pour une alternance d'un an à partir de septembre&nbsp;2027. N'hésitez pas à me contacter.</p>
+      </header>
 
-      <div class="text-columns">
-        <div class="reveal">
-          <p>
-            Deux directions m'attirent aujourd'hui, pour des raisons différentes.
-            L'<strong>expertise comptable</strong> me plaît par la rigueur et la précision
-            qu'elle exige, avec la possibilité de poursuivre jusqu'au master, et,
-            si mon projet évolue dans ce sens, potentiellement plus loin encore.
-            La <strong>finance</strong> m'attire pour sa dimension d'analyse et
-            de décision, avec une poursuite en master pour m'y spécialiser.
-          </p>
-        </div>
-        <div class="reveal" style="--delay:80ms">
-          <p>
-            Je n'ai pas encore tranché. Ce n'est pas de l'indécision, c'est une
-            démarche volontaire. Je préfère confronter mes connaissances théoriques
-            à la réalité du terrain plutôt que de choisir sur la seule base de ce que
-            j'imagine depuis les bancs de l'IUT. C'est précisément le rôle que je donne
-            à mon stage et à mon alternance : ils m'aideront à préciser, avec des faits,
-            l'environnement dans lequel je veux construire ma carrière.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CENTRES D'INTÉRÊT ============ -->
-  <section class="section section-alt" id="interets">
-    <div class="container">
-      <p class="section-eyebrow reveal">06 · Centres d'intérêt</p>
-      <h2 class="section-title reveal">En dehors des cours</h2>
-
-      <div class="interests reveal">
-        <p>
-          Je suis assez attentif à l'actualité et à la politique : j'aime comprendre
-          les décisions économiques avant de me faire un avis dessus. Les nouvelles
-          technologies et l'intelligence artificielle m'intéressent pour la même raison :
-          je préfère comprendre comment un outil fonctionne que simplement l'utiliser.
-          Côté musique, je joue de la batterie et du piano, deux instruments qui, comme
-          les chiffres, ne pardonnent pas l'approximation. Je pratique aussi le tennis et
-          la musculation, deux disciplines où les progrès se construisent sur la durée,
-          une logique qui me convient bien.
-        </p>
-        <ul class="tag-list">
-          <li>Mathématiques &amp; chiffres</li>
-          <li>Actualité &amp; politique</li>
-          <li>Innovation &amp; IA</li>
-          <li>Batterie &amp; piano</li>
-          <li>Tennis</li>
-          <li>Musculation</li>
-          <li>Voyages</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <p class="section-eyebrow reveal">07 · Contact</p>
-      <h2 class="section-title reveal">Discutons</h2>
-      <p class="contact-lede reveal">
-        Je suis disponible pour un stage du 4 janvier au 27 février 2027, et pour une
-        alternance d'un an à partir de septembre 2027. N'hésitez pas à me contacter.
-      </p>
-
-      <div class="contact-grid reveal" style="--delay:80ms">
-        <div class="contact-info">
-          <dl class="ledger">
-            <div class="ledger-row">
-              <dt>Email</dt>
-              <dd><a href="mailto:jpires@etik.com">jpires@etik.com</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Téléphone</dt>
-              <dd><a href="tel:+33782626070" class="mono">07 82 62 60 70</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>LinkedIn</dt>
-              <dd><a href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener">linkedin.com/in/julien-pires</a></dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Localisation</dt>
-              <dd>Amiens</dd>
-            </div>
-            <div class="ledger-row">
-              <dt>Mobilité</dt>
-              <dd>Permis B · véhicule personnel</dd>
-            </div>
-          </dl>
+      <div class="contact-grid">
+        <div class="contact-side" data-reveal>
+          <ul class="contact-list" role="list">
+            <li class="contact-item is-link">
+              <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-mail"/></svg></span>
+              <span class="contact-body"><span class="contact-label">Email</span><a class="contact-value stretched" href="mailto:jpires@etik.com">jpires@etik.com</a></span>
+              <button class="icon-btn copy-btn" type="button" data-copy="jpires@etik.com" aria-label="Copier l'adresse email">
+                <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                <svg class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+              </button>
+            </li>
+            <li class="contact-item is-link">
+              <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span>
+              <span class="contact-body"><span class="contact-label">Téléphone</span><a class="contact-value stretched" href="tel:+33782626070">07&nbsp;82&nbsp;62&nbsp;60&nbsp;70</a></span>
+              <svg class="icon contact-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+            <li class="contact-item is-link">
+              <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-linkedin"/></svg></span>
+              <span class="contact-body"><span class="contact-label">LinkedIn</span><a class="contact-value stretched" href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener">Voir mon profil<span class="sr-only"> (nouvel onglet)</span></a></span>
+              <svg class="icon contact-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </li>
+            <li class="contact-item">
+              <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-map-pin"/></svg></span>
+              <span class="contact-body"><span class="contact-label">Localisation</span><span class="contact-value">Amiens</span></span>
+            </li>
+            <li class="contact-item">
+              <span class="icon-badge" aria-hidden="true"><svg class="icon"><use href="#i-car"/></svg></span>
+              <span class="contact-body"><span class="contact-label">Mobilité</span><span class="contact-value">Permis B et véhicule personnel</span></span>
+            </li>
+          </ul>
+          <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
         </div>
 
-        <div class="contact-actions">
-          <a href="mailto:jpires@etik.com" class="btn btn-primary btn-block">Écrire un email</a>
-          <a href="https://www.linkedin.com/in/julien-pires-460977383" target="_blank" rel="noopener" class="btn btn-secondary btn-block">Voir mon LinkedIn</a>
-        </div>
+        <form class="card contact-form" id="contact-form" novalidate data-reveal style="--d:1" aria-labelledby="form-title">
+          <div class="form-head">
+            <h3 class="form-title" id="form-title">Écrire un message</h3>
+            <p class="form-hint">Votre messagerie s'ouvrira avec le message déjà rédigé&nbsp;: il ne restera qu'à l'envoyer.</p>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Nom</label>
+              <input class="input" id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-error">
+              <p class="field-error" id="f-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-company">Entreprise <span class="optional">(facultatif)</span></label>
+              <input class="input" id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-subject">Objet</label>
+            <select class="input" id="f-subject" name="subject">
+              <option>Proposition de stage</option>
+              <option>Proposition d'alternance</option>
+              <option>Autre demande</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea class="input" id="f-message" name="message" rows="5" required aria-describedby="f-message-error"></textarea>
+            <p class="field-error" id="f-message-error"></p>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Préparer l'email<svg class="icon icon-nudge-right" aria-hidden="true"><use href="#i-send"/></svg></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="container footer-inner">
-    <p>© 2026 Julien Pires, Amiens</p>
-    <a href="#accueil">Haut de page ↑</a>
+    <a class="brand" href="#accueil" aria-label="Julien Pires, retour à l'accueil">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span class="brand-text">
+        <span class="brand-name">Julien Pires</span>
+        <span class="brand-role">BUT GEA · Amiens</span>
+      </span>
+    </a>
+    <p class="footer-copy">© <span id="year">2026</span> Julien Pires, Amiens</p>
+    <a class="footer-top" href="#accueil">Haut de page<svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<button class="to-top" id="to-top" type="button" aria-label="Revenir en haut de la page">
+  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</button>
 </body>
 </html>
